@@ -44,7 +44,7 @@ function Detail({ properties}) {
   useEffect(()=>{
     const handleitems =async()=>{
      try{
-       const response = await axios.get('http://localhost:4008/getpro')     
+       const response = await axios.get('https://property1-uoj3.onrender.com/getpro')     
      setfirst(response.data)
     
      }
@@ -58,7 +58,7 @@ function Detail({ properties}) {
   useEffect(()=>{
     const agent =async()=>{
      try{
-       const responses = await axios.get('http://localhost:4008/getcustomer')     
+       const responses = await axios.get('https://property1-uoj3.onrender.com/getcustomer')     
      setsecond(responses.data)
     
      }
@@ -71,7 +71,7 @@ function Detail({ properties}) {
   useEffect(()=>{
     const agents =async()=>{
      try{
-       const responses = await axios.get('http://localhost:4008/request-organizer')     
+       const responses = await axios.get('https://property1-uoj3.onrender.com/request-organizer')     
      setagents(responses.data)
     
      }
@@ -103,7 +103,7 @@ const organizer= agents.filter((item)=>item.email===getmail)
 
 const addToWishlist = async (propertyId, userId) => {
   try {
-    const response = await axios.post('http://localhost:4008/addToWishlist', { propertyId, userId });
+    const response = await axios.post('https://property1-uoj3.onrender.com/addToWishlist', { propertyId, userId });
     console.log(response.data); 
    
   } catch (error) {
