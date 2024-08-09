@@ -90,7 +90,7 @@ const Propertylist = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:4008/getpro');
+        const response = await axios.get('https://property1-uoj3.onrender.com/getpro');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -102,7 +102,7 @@ const Propertylist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4008/deleteList/${id}`);
+      await axios.delete(`https://property1-uoj3.onrender.com/deleteList/${id}`);
       // Update the state after successful deletion
       setUsers(users.filter(user => user._id !== id));
       toast.success('User deleted successfully');
