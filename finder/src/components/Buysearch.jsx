@@ -32,7 +32,7 @@ const [searchTerm, setSearchTerm] = useState("");
     useEffect(() => {
       const handleItems = async () => {
         try {
-          const response = await axios.get('http://localhost:4008/getpro');
+          const response = await axios.get('https://property1-uoj3.onrender.com/getpro');
           setFirst(response.data);
         } catch (error) {
           console.error('Error fetching data:', error);
@@ -62,7 +62,7 @@ const [searchTerm, setSearchTerm] = useState("");
     // useEffect(() => {
     //     const fetchEvents = async () => {
     //         try {
-    //             const response = await axios.get("http://localhost:4000/events");
+    //             const response = await axios.get("https://property1-uoj3.onrender.com/events");
     //             setAllEvents(response.data);
     //             setFilteredEvents(response.data);
     //             setIsLoading(false);
