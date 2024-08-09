@@ -16,7 +16,7 @@ function Propertybyone() {
     useEffect(() => {
       const handleItems = async () => {
         try {
-          const response = await axios.get('http://localhost:4008/getpro');
+          const response = await axios.get('https://property1-uoj3.onrender.com/getpro');
           setFirst(response.data);
          
          
@@ -35,7 +35,7 @@ function Propertybyone() {
   
 const handleDelete = async (id) => {
   try {
-    await axios.delete(`http://localhost:4008/deleteList/${id}`);
+    await axios.delete(`https://property1-uoj3.onrender.com/deleteList/${id}`);
     // Update the state after successful deletion
     setFirst(first.filter(list => list._id !== id));
   } catch (error) {
