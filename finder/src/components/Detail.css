@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .col-xs-12,
+    .col-sm-6,
+    .col-md-4,
+    .col-lg-8 {
+      width: 100% !important;
+      margin-bottom: 15px;
+    }
+  
+    .col-lg-8 {
+      margin-left: 0;
+    }
+  
+    .col-md-4 {
+      margin-left: 0;
+    }
+    
+    .details-container {
+      padding: 2%;
+    }
+  }
