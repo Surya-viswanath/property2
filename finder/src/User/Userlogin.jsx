@@ -28,7 +28,7 @@ const handlename =(event)=>{
    
       event.preventDefault()
       try{
-      const display =await axios.post('http://localhost:4008/customerlogin',{email, password})
+      const display =await axios.post('https://property1-uoj3.onrender.com/customerlogin',{email, password})
       console.log(display.data);
       // navigate(`/Home/${display.data.id}`);}
       // catch(error){console.log(error); 
