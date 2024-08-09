@@ -40,7 +40,7 @@ function Agentdata() {
   useEffect(()=>{
     const handleitems =async()=>{
      try{
-       const response = await axios.get('http://localhost:4008/getpro')     
+       const response = await axios.get('https://property1-uoj3.onrender.com/getpro')     
      setfirst(response.data)
     //  console.log(first);
      }
@@ -54,7 +54,7 @@ function Agentdata() {
   useEffect(()=>{
     const agent =async()=>{
      try{
-       const responses = await axios.get('http://localhost:4008/getcustomer')     
+       const responses = await axios.get('https://property1-uoj3.onrender.com/getcustomer')     
      setsecond(responses.data)
      console.log(second);
      }
