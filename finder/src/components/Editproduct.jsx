@@ -9,7 +9,7 @@ function Editproduct() {
     description: ''
   });
   useEffect(() => {
-    axios.get(`http://localhost:4008/getpro`)
+    axios.get(`https://property1-uoj3.onrender.com/getpro`)
       .then(res => {
         setProduct(res.data);
         setFormData({
@@ -26,7 +26,7 @@ function Editproduct() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    axios.put(`http://localhost:4008/getpro`, formData)
+    axios.put(`https://property1-uoj3.onrender.com/getpro`, formData)
       .then(res => console.log('Product updated successfully'))
       .catch(err => console.log(err));
   };
