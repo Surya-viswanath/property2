@@ -86,11 +86,11 @@ const [dropdownOpen, setDropDown] = useState(false);
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{marginLeft:'20%'}}>
          
-            <Nav.Link href={`/buy/Buy`} className='meenu'>Buy</Nav.Link>
-            <Nav.Link href={`/rent/Rent`}  className='meenu'>Rent</Nav.Link>
-            <Nav.Link href={`/commercial/commercial`}  className='meenu'>Commercial</Nav.Link>
-            <Nav.Link href={`/all`}  className='meenu'>Properties</Nav.Link>
-            <Nav.Link href={`/findagent`}  className='meenu'>Find agent</Nav.Link>
+            <Link to="/buy/Buy" style={{textDecoration:'none'}}><Nav className='meenu'>Buy</Nav></Link>
+             <Link to="/rent/Rent" style={{textDecoration:'none'}}> <Nav className='meenu'>Rent</Nav></Link>
+             <Link to="/commercial/commercial" style={{textDecoration:'none'}}> <Nav  className='meenu'>Commercial</Nav></Link>
+             <Link to="/all" style={{textDecoration:'none'}}> <Nav className='meenu'>Properties</Nav></Link>
+       <Link to="/findagent" style={{textDecoration:'none'}}>      <Nav className='meenu'>Find agent</Nav></Link>
             {/* <div class="dropdown" style={{textAlign:'center'}}>
   <button class="dropbtn"  >Account</button>
   <div class="dropdown-content"> */}
